@@ -1,12 +1,17 @@
+let input = document.querySelector("input")
+let btn = document.querySelector("button")
+let paragraph = document.querySelector("p")
 
-let names = ["Akmal", "Sobirjon", "Abdulloh", "Abdurahmon", "Abu Bakr Siddiq", "Umar"]
-
-// for (let i = 0; i < names.length; i++){
-//     console.log("-" + names[i]);
-// }
-
-function random(){
-    console.log(names[0])
-}
-
-random();
+btn.addEventListener("click", function getCLick(){
+ let listItems = ""
+    for(let i = 0; i<leads.length; i++){
+        // listItems += "<li> <a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i]  + "</a> </li>"
+        listItems += `
+        <li>
+            <a target='_blank' href="${leads[i]}">
+                ${leads[i]}
+            </a>
+        </li>`
+    }
+    ulEL.innerHTML = listItems
+})
